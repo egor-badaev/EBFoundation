@@ -1,3 +1,3 @@
 # EBFoundation
 
-A description of this package.
+A collection of extensions and methods to speed up development

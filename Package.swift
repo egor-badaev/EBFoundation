@@ -21,8 +21,5 @@ let package = Package(
         .target(
             name: "EBFoundation",
             dependencies: []),
-        .testTarget(
-            name: "EBFoundationTests",
-            dependencies: ["EBFoundation"]),
     ]
 )
