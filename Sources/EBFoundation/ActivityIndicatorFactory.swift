@@ -9,7 +9,16 @@
 import UIKit
 
 public class ActivityIndicatorFactory {
-    static func makeDefaultLoader() -> UIActivityIndicatorView {
+    /**
+     Create a simple `UIActivityIndicatorView` to use with auto layout
+     
+     - parameters:
+        - style: indicator style. Default is `.gray`
+     
+     - returns: `UIActivityIndicatorView` object
+     */
+
+    static func makeDefaultLoader(style: UIActivityIndicatorView.Style = .gray) -> UIActivityIndicatorView {
         let loader = UIActivityIndicatorView(style: .gray)
         loader.toAutoLayout()
         return loader

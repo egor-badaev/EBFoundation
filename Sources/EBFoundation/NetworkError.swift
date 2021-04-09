@@ -13,7 +13,7 @@ public enum NetworkError: LocalizedError {
     case badResponse
     case invalidData
     
-    var errorDescription: String? {
+    public var errorDescription: String? {
         switch self {
         case .invalidURL:
             return "Данный URL не является валидным"

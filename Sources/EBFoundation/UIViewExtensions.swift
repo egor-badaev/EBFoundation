@@ -1,5 +1,5 @@
 //
-//  UIView+Navigation.swift
+//  UIViewExtensions.swift
 //  EBFoundation
 //
 //  Created by Egor Badaev on 17.11.2020.

@@ -9,6 +9,13 @@
 import Foundation
 
 public extension String {
+    /**
+     Convert `String` to `URL` object
+     
+     - returns: `URL` object
+     
+     Throws `NetworkError.invalidURL` if cannot convert
+     */
     func toURL() throws -> URL {
         guard let url = URL(string: self) else {
             print("Cannot create URL from string")
@@ -17,6 +24,13 @@ public extension String {
         return url
     }
     
+    /**
+     Convert `String` to `Date` object with ISO 8601 format
+     
+     - returns: `Date` object
+     
+     Throws `NetworkError.invalidData` if cannot convert
+     */
     func toISO8601Date(withFractionalSeconds: Bool = true) throws -> Date {
         let dateFormatter = ISO8601DateFormatter()
         dateFormatter.formatOptions = [.withInternetDateTime, .withDashSeparatorInDate, .withColonSeparatorInTime]

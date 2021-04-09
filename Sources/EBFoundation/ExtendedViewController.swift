@@ -10,14 +10,14 @@ import UIKit
 
 public class ExtendedViewController: UIViewController {
     
-    var viewHasAppeared = false
+    public var viewHasAppeared = false
 
-    override func viewDidAppear(_ animated: Bool) {
+    public override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         viewHasAppeared = true
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
+    public override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         viewHasAppeared = false
     }

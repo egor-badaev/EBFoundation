@@ -1,5 +1,5 @@
 //
-//  UIImage+Navigation.swift
+//  UIImageExtensions.swift
 //  EBFoundation
 //
 //  Created by Egor Badaev on 17.11.2020.
