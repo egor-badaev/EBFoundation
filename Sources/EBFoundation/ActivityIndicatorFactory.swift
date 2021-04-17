@@ -18,7 +18,7 @@ public class ActivityIndicatorFactory {
      - returns: `UIActivityIndicatorView` object
      */
 
-    static func makeDefaultLoader(style: UIActivityIndicatorView.Style = .gray) -> UIActivityIndicatorView {
+    public static func makeDefaultLoader(style: UIActivityIndicatorView.Style = .gray) -> UIActivityIndicatorView {
         let loader = UIActivityIndicatorView(style: .gray)
         loader.toAutoLayout()
         return loader

@@ -18,7 +18,7 @@ public class AlertFactory {
      
      - returns: `UIAlertController` object
      */
-    static func makeInfoAlert(title: String, message: String) -> UIAlertController {
+    public static func makeInfoAlert(title: String, message: String) -> UIAlertController {
         let errorAlert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let dismissAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         errorAlert.addAction(dismissAction)
@@ -35,7 +35,7 @@ public class AlertFactory {
      
      Title is predefined ("Ошибка") but in the subtitle you can disclose the essence of the error
      */
-    static func makeErrorAlert(_ message: String) -> UIAlertController {
+    public static func makeErrorAlert(_ message: String) -> UIAlertController {
         return AlertFactory.makeInfoAlert(title: "Ошибка", message: message)
     }
 }

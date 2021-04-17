@@ -8,7 +8,7 @@
 import Foundation
 
 public struct PluralizableString {
-    var one: String
-    var few: String
-    var many: String
+    public var one: String
+    public var few: String
+    public var many: String
 }

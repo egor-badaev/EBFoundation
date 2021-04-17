@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class ExtendedViewController: UIViewController {
+open class ExtendedViewController: UIViewController {
     
     public var viewHasAppeared = false
 

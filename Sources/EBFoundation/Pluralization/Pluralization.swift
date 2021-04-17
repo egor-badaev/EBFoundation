@@ -9,7 +9,7 @@ import Foundation
 
 public class Pluralization {
 
-    enum Category {
+    public enum Category {
         case one
         case few
         case many
