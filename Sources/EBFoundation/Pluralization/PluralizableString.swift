@@ -11,4 +11,10 @@ public struct PluralizableString {
     public var one: String
     public var few: String
     public var many: String
+
+    public init(one: String, few: String, many: String) {
+        self.one = one
+        self.few = few
+        self.many = many
+    }
 }

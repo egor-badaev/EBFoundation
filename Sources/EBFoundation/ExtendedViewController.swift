@@ -12,12 +12,12 @@ open class ExtendedViewController: UIViewController {
     
     public var viewHasAppeared = false
 
-    public override func viewDidAppear(_ animated: Bool) {
+    open override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         viewHasAppeared = true
     }
     
-    public override func viewDidDisappear(_ animated: Bool) {
+    open override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         viewHasAppeared = false
     }
